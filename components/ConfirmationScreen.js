@@ -32,13 +32,13 @@ export default class Confirmation extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#5DBCD2",
+    backgroundColor: "#F9B53A",
     alignItems: "center",
     justifyContent: "center"
   },
   message: {
     height: 50,
-    color: "white"
+    color: "#2D49B0"
   },
 
   backtoLogin: {

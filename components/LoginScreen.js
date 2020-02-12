@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Button
 } from "react-native";
+import { withOrientation } from "react-navigation";
 
 export default class Login extends React.Component {
   state = {
@@ -18,7 +19,7 @@ export default class Login extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Text style={styles.logo}>faceIT</Text>
+        <Text style={styles.logo}>FaceIT!</Text>
         <View style={styles.inputView}>
           <TextInput
             style={styles.inputText}
@@ -42,7 +43,7 @@ export default class Login extends React.Component {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.loginBtn}>
-          <Button title="Login" onPress={() => navigate("Setting")}></Button>
+          <Button title="Login" onPress={() => navigate("Home")}></Button>
         </TouchableOpacity>
         {/* <TouchableOpacity>
           <Text style={styles.loginText}>Signup</Text>
@@ -55,7 +56,7 @@ export default class Login extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#5DBCD2",
+    backgroundColor: "#F9B53A",
     alignItems: "center",
     justifyContent: "center"
   },
@@ -79,7 +80,7 @@ const styles = StyleSheet.create({
     color: "white"
   },
   forgot: {
-    color: "white",
+    color: "#2D49B0",
     fontSize: 11
   },
   loginBtn: {
@@ -91,8 +92,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginTop: 40,
     marginBottom: 10
-  },
-  loginText: {
-    color: "white"
   }
 });
