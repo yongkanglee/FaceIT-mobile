@@ -28,14 +28,12 @@ export default class ViewAttendance extends Component {
   }
 
   getEvents() {
-    return fetch("http://172.18.161.197:5000/api/event/all").then(r =>
-      r.json()
-    );
+    return fetch("http://192.168.0.190:5000/api/event/all").then(r => r.json());
   }
 
   getAttendance(eventID) {
     return fetch(
-      `http://172.18.161.197:5000/api/attendance?event=${eventID}`
+      `http://192.168.0.190:5000/api/attendance?event=${eventID}`
     ).then(async response => response.json());
   }
 
